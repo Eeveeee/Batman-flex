@@ -1,0 +1,34 @@
+.header {
+  &__blocks {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+  }
+  &__subtitle {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #787878;
+  }
+  &__block {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    &-wrap {
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &-button {
+    border-radius: 3px;
+    margin-right: 20px;
+    font-size: 16px;
+    padding: 5px 10px 5px 10px;
+  }
+}

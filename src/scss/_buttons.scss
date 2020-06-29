@@ -1,0 +1,29 @@
+.button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.button-more {
+  margin-left: 15px;
+  transform: rotate(180deg);
+  padding: 0;
+  overflow: hidden;
+  height: 31px;
+  width: 31px;
+  border-radius: 50%;
+  &:hover {
+    border: 2px solid black;
+  }
+}
+.play-button {
+  padding: 0;
+  overflow: hidden;
+  height: 31px;
+  width: 31px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-left: 33px;
+  &:hover {
+    border: 2px solid black;
+  }
+}

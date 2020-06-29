@@ -139,14 +139,51 @@ input {
   outline: none;
 }
 
+img {
+  max-width: 100%;
+}
+
+.button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.button-more {
+  margin-left: 15px;
+  transform: rotate(180deg);
+  padding: 0;
+  overflow: hidden;
+  height: 31px;
+  width: 31px;
+  border-radius: 50%;
+}
+
+.button-more:hover {
+  border: 2px solid black;
+}
+
+.play-button {
+  padding: 0;
+  overflow: hidden;
+  height: 31px;
+  width: 31px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-left: 33px;
+}
+
+.play-button:hover {
+  border: 2px solid black;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  background: url(../img/main/batman.png) no-repeat;
-  background-size: cover;
+  background: #000000;
 }
 
 .container {
@@ -154,8 +191,16 @@ body {
   margin: 0 auto;
 }
 
+.main {
+  padding-bottom: 110px;
+  color: #FFFFFF;
+  background: url(../img/main/batman.png) no-repeat;
+  background-size: cover;
+}
+
 .navbar {
   padding: 45px 0 20px 0;
+  margin-bottom: 432px;
 }
 
 .navbar__blocks {
@@ -220,5 +265,43 @@ body {
   height: 40px;
   background: url(../img/main/avatar.jpg) center no-repeat;
   background-size: cover;
+}
+
+.header__blocks {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__title {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+}
+
+.header__subtitle {
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #787878;
+}
+
+.header__block {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.header__block-wrap {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.header-button {
+  border-radius: 3px;
+  margin-right: 20px;
+  font-size: 16px;
+  padding: 5px 10px 5px 10px;
 }
 /*# sourceMappingURL=index.css.map */

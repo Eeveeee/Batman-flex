@@ -1,5 +1,6 @@
 .navbar {
   padding: 45px 0 20px 0;
+  margin-bottom: 432px;
   &__blocks {
     display: flex;
     align-items: center;
@@ -26,6 +27,7 @@
         color: #aeaeae;
       }
     }
+    // FIXME: убрать в адаптиве width
     input:first-child {
       color: white;
       width: 800px;
