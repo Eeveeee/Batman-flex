@@ -1,0 +1,224 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: url(../img/main/batman.png) no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.navbar {
+  padding: 45px 0 20px 0;
+}
+
+.navbar__blocks {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__label {
+  margin-right: 50px;
+  font-weight: 900;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-search .search {
+  font-size: 13px;
+  background: rgba(196, 196, 196, 0.5);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 0 12px 18px;
+  text-overflow: ellipsis;
+}
+
+.navbar-search .search::placeholder {
+  text-overflow: ellipsis;
+  color: #aeaeae;
+}
+
+.navbar-search input:first-child {
+  color: white;
+  width: 800px;
+}
+
+.navbar-search input:last-child {
+  margin-left: 19px;
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-profile {
+  margin-left: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-profile input {
+  max-width: 12px;
+  max-height: 17px;
+}
+
+.navbar-profile .profile-avatar {
+  margin-left: 20px;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: url(../img/main/avatar.jpg) center no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=index.css.map */

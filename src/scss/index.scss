@@ -1,0 +1,15 @@
+@import "_reset.scss";
+@import "_variables.scss";
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: url(../img/main/batman.png) no-repeat;
+  background-size: cover;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+@import "_main.scss";

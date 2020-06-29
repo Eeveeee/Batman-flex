@@ -1,0 +1,57 @@
+.navbar {
+  padding: 45px 0 20px 0;
+  &__blocks {
+    display: flex;
+    align-items: center;
+  }
+  &__label {
+    margin-right: 50px;
+    font-weight: 900;
+    font-size: 24px;
+    color: $text-color-light;
+  }
+  &-search {
+    display: flex;
+    align-items: center;
+    .search {
+      font-size: 13px;
+      background: rgba(196, 196, 196, 0.5);
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      padding: 12px 0 12px 18px;
+      text-overflow: ellipsis;
+      &::placeholder {
+        text-overflow: ellipsis;
+        color: #aeaeae;
+      }
+    }
+    input:first-child {
+      color: white;
+      width: 800px;
+    }
+    input:last-child {
+      margin-left: 19px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &-profile {
+    margin-left: 56px;
+    display: flex;
+    align-items: center;
+    input {
+      max-width: 12px;
+      max-height: 17px;
+    }
+    .profile-avatar {
+      margin-left: 20px;
+      overflow: hidden;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      background: url(../img/main/avatar.jpg) center no-repeat;
+      background-size: cover;
+    }
+  }
+}
