@@ -437,6 +437,10 @@ body {
   height: 15px;
 }
 
+.more-active {
+  display: block;
+}
+
 .white {
   color: #ff8f27;
 }
