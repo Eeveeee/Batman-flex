@@ -1,0 +1,100 @@
+.more .container {
+  background: #ffffff;
+}
+.more {
+  -webkit-box-shadow: -2px -28px 46px 35px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px -28px 46px 35px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px -28px 46px 35px rgba(0, 0, 0, 0.75);
+  &__blocks {
+    padding: 44px 44px 44px 44px;
+    display: flex;
+  }
+  &__cover {
+    flex-basis: 15%;
+    display: flex;
+    flex-direction: column;
+    .button {
+      margin-top: 20px;
+      background: #ff8f27;
+      padding: 10px 20px;
+      color: #ffffff;
+    }
+  }
+  &__roles {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    h2 {
+      font-weight: 900;
+      margin-bottom: 15px;
+    }
+    a {
+      margin-bottom: 5px;
+      text-decoration: underline;
+    }
+  }
+  &-contain {
+    flex-basis: 75%;
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+  }
+  &-pages {
+    display: flex;
+    margin-bottom: 40px;
+    div {
+      margin-left: 42px;
+    }
+  }
+  &-bookmark {
+    min-width: 12px;
+    margin-left: 50px;
+  }
+  &-info {
+    display: flex;
+  }
+  &-page {
+    width: 505px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    margin-left: 44px;
+    h2 {
+      margin: 50px 0 25px 0;
+      font-weight: 900;
+    }
+    p {
+      width: 100%;
+    }
+  }
+  &-addictional {
+    margin-left: 50px;
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: 900;
+    }
+  }
+  &-form {
+    display: flex;
+    input {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 5px 0px 0px 5px;
+      padding: 12px 80px 12px 10px;
+    }
+    button {
+      width: 40px;
+      height: 40px;
+      border-radius: 0px 5px 5px 0px;
+      background: #ff8f27;
+      text-align: center;
+      padding: 12px;
+      img {
+        max-width: 100%;
+        width: 20px;
+        height: 15px;
+      }
+    }
+  }
+}
