@@ -1,0 +1,21 @@
+.white {
+  color: #ff8f27;
+}
+.actor-card {
+  display: flex;
+  flex-basis: 32%;
+  flex-direction: column;
+  margin-bottom: 10px;
+  justify-content: space-around;
+  b {
+    font-weight: 900;
+  }
+}
+.actors {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-selector {
+  cursor: pointer;
+}

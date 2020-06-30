@@ -177,6 +177,10 @@ img {
   border: 2px solid black;
 }
 
+.button-active {
+  transform: rotate(90deg);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -310,6 +314,7 @@ body {
 }
 
 .more {
+  display: none;
   box-shadow: -2px -28px 46px 35px rgba(0, 0, 0, 0.75);
 }
 
@@ -343,6 +348,7 @@ body {
 }
 
 .more__roles a {
+  cursor: pointer;
   margin-bottom: 5px;
   text-decoration: underline;
 }
@@ -391,6 +397,7 @@ body {
 }
 
 .more-addictional {
+  text-align: center;
   margin-left: 50px;
 }
 
@@ -398,6 +405,11 @@ body {
   margin-bottom: 20px;
   text-align: center;
   font-weight: 900;
+}
+
+.more-addictional .ad-block img {
+  width: 100%;
+  margin-top: 30px;
 }
 
 .more-form {
@@ -423,5 +435,31 @@ body {
   max-width: 100%;
   width: 20px;
   height: 15px;
+}
+
+.white {
+  color: #ff8f27;
+}
+
+.actor-card {
+  display: flex;
+  flex-basis: 32%;
+  flex-direction: column;
+  margin-bottom: 10px;
+  justify-content: space-around;
+}
+
+.actor-card b {
+  font-weight: 900;
+}
+
+.actors {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-selector {
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */
