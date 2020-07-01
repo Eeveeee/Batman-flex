@@ -1,17 +1,17 @@
 .more .container {
+  border-radius: 5px;
   background: #ffffff;
 }
 .more {
-  display: none;
-  -webkit-box-shadow: -2px -28px 46px 35px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -2px -28px 46px 35px rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  transition: 0.7s;
   box-shadow: -2px -28px 46px 35px rgba(0, 0, 0, 0.75);
   &__blocks {
+    height: 840px;
     padding: 44px 44px 44px 44px;
     display: flex;
   }
   &__cover {
-    flex-basis: 15%;
     display: flex;
     flex-direction: column;
     .button {
@@ -36,25 +36,20 @@
     }
   }
   &-contain {
-    flex-basis: 75%;
-    flex-wrap: wrap;
     font-weight: 500;
     font-size: 18px;
-    display: flex;
   }
   &-pages {
+    margin: 0 0 40px 44px;
     display: flex;
-    margin-bottom: 40px;
-    div {
-      margin-left: 42px;
-    }
+    justify-content: space-between;
   }
   &-bookmark {
     min-width: 12px;
-    margin-left: 50px;
   }
   &-info {
     display: flex;
+    padding-left: 44px;
   }
   // FIXME: width надо переписать под адаптив
   &-page {
@@ -62,7 +57,6 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 140%;
-    margin-left: 44px;
     h2 {
       margin: 50px 0 25px 0;
       font-weight: 900;
@@ -109,5 +103,27 @@
   }
 }
 .more-active {
-  display: block;
+  opacity: 1;
+}
+@media (max-width: 1024px) {
+  .more {
+    .container {
+      border-radius: 0;
+    }
+    &__blocks {
+      height: 800px;
+      padding: 25px;
+    }
+    &__cover {
+      flex-basis: auto;
+    }
+    &-form {
+      input {
+        padding: 12px 40px 12px 10px;
+      }
+    }
+    &-addictional {
+      margin-left: 20px;
+    }
+  }
 }

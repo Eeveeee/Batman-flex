@@ -4,6 +4,7 @@
   border: none;
 }
 .button-more {
+  transition: 0.4s;
   margin-left: 15px;
   transform: rotate(180deg);
   padding: 0;
@@ -12,6 +13,7 @@
   width: 31px;
   border-radius: 50%;
   &:hover {
+    transition: none;
     border: 2px solid black;
   }
 }

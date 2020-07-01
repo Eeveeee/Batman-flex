@@ -17,6 +17,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
+    <!-- animation  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <!-- js  -->
+    <script src="src/js/showMore.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -24,7 +31,9 @@
       <div class="navbar">
         <div class="container">
           <div class="navbar__blocks">
-            <div class="navbar__label">КиноПоиск</div>
+            <a href="" class="navbar__label animate__animated animate__bounce">
+              КиноПоиск
+            </a>
             <!-- /.navbar__label -->
             <form action="#" class="navbar-search">
               <input
@@ -123,7 +132,7 @@
               </a>
             </div>
             <div class="more-info">
-              <div id="page" class="more-page"></div>
+              <div id="page" class="more-page animate__animated"></div>
               <!-- /.more-page -->
               <div class="more-addictional">
                 <h2>Подпишитесь на обновления</h2>
@@ -154,6 +163,5 @@
     <!-- /.more -->
   </body>
   <!-- js  -->
-  <script src="src/js/showMore.js"></script>
   <script src="src/js/pageChanger.js"></script>
 </html>

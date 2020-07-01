@@ -5,20 +5,34 @@
   box-sizing: border-box;
 }
 body {
+  overflow-y: hidden;
   font-family: "Roboto", sans-serif;
   background: #000000;
+}
+.scroll {
+  overflow-y: auto;
 }
 .container {
   max-width: 1140px;
   margin: 0 auto;
 }
 .main {
-  padding-bottom: 110px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: $text-color-light;
-  background: url(../img/main/batman.png) no-repeat;
+  background: url(../img/main/batman.png) center no-repeat;
   background-size: cover;
 }
 @import "_navbar.scss";
 @import "_header.scss";
 @import "_more.scss";
 @import "_page-changer.scss";
+// @media (max-width: 1460px) {
+//   .main {
+//     background-position: center;
+//   }
+// }
+@media (max-width: 1024px) {
+}

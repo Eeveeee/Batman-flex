@@ -1,13 +1,17 @@
 const pageSelectors = document.querySelectorAll(".page-selector");
 const pageDescriptions = document.getElementById("page");
+const animatePage = "zoomIn";
 pageDescriptions.innerHTML = description();
+
 pageSelectors.forEach((selector) => {
   selector.addEventListener("click", () => {
+    pageDescriptions.classList.remove("more-active");
     pageSelectors.forEach((el) => {
       el.classList.remove("white");
       pageDescriptions.classList.remove("actors");
     });
     selector.classList.add("white");
+    pageDescriptions.classList.add(`animate__${animatePage}`);
     switch (selector.textContent) {
       case "Описание":
         pageDescriptions.innerHTML = description();
@@ -35,6 +39,9 @@ pageSelectors.forEach((selector) => {
         pageDescriptions.innerHTML = `Не удалось обработать запрос`;
         break;
     }
+    setTimeout(() => {
+      pageDescriptions.classList.remove(`animate__${animatePage}`);
+    }, 1000);
   });
 });
 function description() {

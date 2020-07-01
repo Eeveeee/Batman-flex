@@ -150,6 +150,7 @@ img {
 }
 
 .button-more {
+  transition: 0.4s;
   margin-left: 15px;
   transform: rotate(180deg);
   padding: 0;
@@ -160,6 +161,7 @@ img {
 }
 
 .button-more:hover {
+  transition: none;
   border: 2px solid black;
 }
 
@@ -186,8 +188,13 @@ img {
 }
 
 body {
+  overflow-y: hidden;
   font-family: "Roboto", sans-serif;
   background: #000000;
+}
+
+.scroll {
+  overflow-y: auto;
 }
 
 .container {
@@ -196,23 +203,28 @@ body {
 }
 
 .main {
-  padding-bottom: 110px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: #FFFFFF;
-  background: url(../img/main/batman.png) no-repeat;
+  background: url(../img/main/batman.png) center no-repeat;
   background-size: cover;
 }
 
 .navbar {
-  padding: 45px 0 20px 0;
-  margin-bottom: 432px;
+  padding-top: 45px;
 }
 
 .navbar__blocks {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .navbar__label {
+  cursor: pointer;
+  text-decoration: none;
   margin-right: 50px;
   font-weight: 900;
   font-size: 24px;
@@ -271,7 +283,14 @@ body {
   background-size: cover;
 }
 
+@media (max-width: 1024px) {
+  .navbar-search input:first-child {
+    width: 600px;
+  }
+}
+
 .header__blocks {
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
 }
@@ -309,22 +328,30 @@ body {
   padding: 5px 10px 5px 10px;
 }
 
+@media (max-width: 1024px) {
+  .header__blocks {
+    padding: 0 25px 50px 25px;
+  }
+}
+
 .more .container {
+  border-radius: 5px;
   background: #ffffff;
 }
 
 .more {
-  display: none;
+  opacity: 0;
+  transition: 0.7s;
   box-shadow: -2px -28px 46px 35px rgba(0, 0, 0, 0.75);
 }
 
 .more__blocks {
+  height: 840px;
   padding: 44px 44px 44px 44px;
   display: flex;
 }
 
 .more__cover {
-  flex-basis: 15%;
   display: flex;
   flex-direction: column;
 }
@@ -354,29 +381,23 @@ body {
 }
 
 .more-contain {
-  flex-basis: 75%;
-  flex-wrap: wrap;
   font-weight: 500;
   font-size: 18px;
-  display: flex;
 }
 
 .more-pages {
+  margin: 0 0 40px 44px;
   display: flex;
-  margin-bottom: 40px;
-}
-
-.more-pages div {
-  margin-left: 42px;
+  justify-content: space-between;
 }
 
 .more-bookmark {
   min-width: 12px;
-  margin-left: 50px;
 }
 
 .more-info {
   display: flex;
+  padding-left: 44px;
 }
 
 .more-page {
@@ -384,7 +405,6 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 140%;
-  margin-left: 44px;
 }
 
 .more-page h2 {
@@ -438,7 +458,26 @@ body {
 }
 
 .more-active {
-  display: block;
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .more .container {
+    border-radius: 0;
+  }
+  .more__blocks {
+    height: 800px;
+    padding: 25px;
+  }
+  .more__cover {
+    flex-basis: auto;
+  }
+  .more-form input {
+    padding: 12px 40px 12px 10px;
+  }
+  .more-addictional {
+    margin-left: 20px;
+  }
 }
 
 .white {

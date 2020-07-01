@@ -1,11 +1,13 @@
 .navbar {
-  padding: 45px 0 20px 0;
-  margin-bottom: 432px;
+  padding-top: 45px;
   &__blocks {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   &__label {
+    cursor: pointer;
+    text-decoration: none;
     margin-right: 50px;
     font-weight: 900;
     font-size: 24px;
@@ -54,6 +56,15 @@
       height: 40px;
       background: url(../img/main/avatar.jpg) center no-repeat;
       background-size: cover;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .navbar {
+    &-search {
+      input:first-child {
+        width: 600px;
+      }
     }
   }
 }
