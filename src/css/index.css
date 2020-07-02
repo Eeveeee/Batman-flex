@@ -289,6 +289,12 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .navbar-search input:first-child {
+    width: 400px;
+  }
+}
+
 .header__blocks {
   padding-bottom: 50px;
   display: flex;
@@ -477,6 +483,36 @@ body {
   }
   .more-addictional {
     margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .more-info {
+    padding-left: 22px;
+  }
+  .more__blocks {
+    height: 1200px;
+  }
+  .more-page {
+    width: 300px;
+  }
+  .more-pages {
+    font-size: 16px;
+    margin: 0 0 20px 22px;
+  }
+  .more-addictional {
+    max-width: 200px;
+  }
+  .more-form {
+    flex-direction: column;
+  }
+  .more-form button {
+    border-radius: 0 0 5px 5px;
+    width: auto;
+    height: auto;
+  }
+  .more-form input {
+    border-radius: 5px 5px 0 0;
   }
 }
 

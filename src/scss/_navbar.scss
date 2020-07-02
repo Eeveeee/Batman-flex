@@ -68,3 +68,12 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .navbar {
+    &-search {
+      input:first-child {
+        width: 400px;
+      }
+    }
+  }
+}

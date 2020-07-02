@@ -127,3 +127,34 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .more {
+    &-info {
+      padding-left: 22px;
+    }
+    &__blocks {
+      height: 1200px;
+    }
+    &-page {
+      width: 300px;
+    }
+    &-pages {
+      font-size: 16px;
+      margin: 0 0 20px 22px;
+    }
+    &-addictional {
+      max-width: 200px;
+    }
+    &-form {
+      flex-direction: column;
+      button {
+        border-radius: 0 0 5px 5px;
+        width: auto;
+        height: auto;
+      }
+      input {
+        border-radius: 5px 5px 0 0;
+      }
+    }
+  }
+}
