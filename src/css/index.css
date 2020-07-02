@@ -258,8 +258,8 @@ body {
 
 .navbar-search input:last-child {
   margin-left: 19px;
-  width: 20px;
-  height: 20px;
+  width: auto;
+  height: auto;
 }
 
 .navbar-profile {
@@ -292,6 +292,45 @@ body {
 @media (max-width: 768px) {
   .navbar-search input:first-child {
     width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 25px 0 25px;
+  }
+  .navbar {
+    padding-top: 20px;
+  }
+  .navbar__blocks {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .navbar-label {
+    order: 1;
+  }
+  .navbar-search {
+    margin-top: 20px;
+    order: 3;
+  }
+  .navbar-search input:first-child {
+    width: 320px;
+  }
+  .navbar-search input:last-child {
+    margin-left: 8px;
+  }
+  .navbar-profile {
+    margin: 0;
+    order: 2;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar__blocks {
+    justify-content: space-around;
+  }
+  .navbar-search input:first-child {
+    width: 210px;
   }
 }
 
@@ -334,9 +373,39 @@ body {
   padding: 5px 10px 5px 10px;
 }
 
+.header-buttons-wrap {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 1024px) {
   .header__blocks {
     padding: 0 25px 50px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-button {
+    margin: 0;
+  }
+  .header__blocks {
+    padding: 0 0 50px 0;
+  }
+  .header__block-wrap {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header__block-wrap:last-child {
+    display: none;
+  }
+  .header-buttons-wrap:last-child {
+    margin-top: 10px;
+  }
+  .header-buttons-wrap button {
+    margin-right: 10px;
+  }
+  .play-button {
+    margin: 0;
   }
 }
 
@@ -516,6 +585,53 @@ body {
   }
 }
 
+@media (max-width: 480px) {
+  .more {
+    opacity: 1;
+  }
+  .more__blocks {
+    padding-left: 0;
+    padding-right: 0;
+    height: auto;
+    max-height: none;
+    flex-direction: column;
+  }
+  .more__roles {
+    display: none;
+  }
+  .more-pages {
+    margin-left: 0;
+    flex-direction: column;
+  }
+  .more-pages div {
+    margin: 5px 0 5px 0;
+  }
+  .more-pages a {
+    display: none;
+  }
+  .more-info {
+    flex-direction: column;
+    padding: 0;
+  }
+  .more-page {
+    width: auto;
+  }
+  .more-page h2 {
+    margin: 20px 0;
+  }
+  .more-addictional {
+    max-width: none;
+    margin: 10px 0px 0px 0px;
+  }
+  .cover-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .actor-card {
+    justify-content: start !important;
+  }
+}
+
 .white {
   color: #ff8f27;
 }
@@ -540,5 +656,11 @@ body {
 
 .page-selector {
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  body {
+    overflow: auto;
+  }
 }
 /*# sourceMappingURL=index.css.map */

@@ -158,3 +158,51 @@
     }
   }
 }
+@media (max-width: 480px) {
+  .more {
+    opacity: 1;
+    &__blocks {
+      padding-left: 0;
+      padding-right: 0;
+      height: auto;
+      max-height: none;
+      flex-direction: column;
+    }
+    &__roles {
+      display: none;
+    }
+    &-pages {
+      margin-left: 0;
+      flex-direction: column;
+      div {
+        margin: 5px 0 5px 0;
+      }
+      a {
+        display: none;
+      }
+    }
+    &-info {
+      flex-direction: column;
+      padding: 0;
+    }
+    &-page {
+      width: auto;
+      h2 {
+        margin: 20px 0;
+      }
+    }
+    &-addictional {
+      max-width: none;
+      margin: 10px 0px 0px 0px;
+    }
+  }
+  .cover-img {
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .actor-card {
+    justify-content: start !important;
+  }
+}
