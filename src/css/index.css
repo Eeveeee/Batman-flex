@@ -216,7 +216,7 @@ body {
   padding-top: 45px;
 }
 
-.navbar__blocks {
+.navbar-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -334,7 +334,7 @@ body {
   }
 }
 
-.header__blocks {
+.header-wrap {
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -420,7 +420,7 @@ body {
   box-shadow: -2px -28px 46px 35px rgba(0, 0, 0, 0.75);
 }
 
-.more__blocks {
+.more-wrap {
   height: 840px;
   padding: 44px 44px 44px 44px;
   display: flex;
